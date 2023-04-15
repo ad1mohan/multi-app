@@ -1,0 +1,24 @@
+{
+    "requiresCompatibilities": [
+        "EC2"
+    ],
+    "containerDefinitions": [
+        {
+            "name": "app2v2",
+            "image": "ad1mohan/app2v2",
+            "memory": "512",
+            "essential": true,
+            "portMappings": [
+                {
+                    "hostPort": 8091,
+                    "protocol": "tcp",
+                    "containerPort": 8091
+                }
+            ]
+        }
+    ],
+    "networkMode": "bridge",
+    "memory": "512",
+    "cpu": "256",
+    "family": "app2v2-td"
+}
