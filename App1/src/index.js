@@ -7,7 +7,7 @@ const path = require("path");
 const app = express();
 app.use(express.static("public"));
 
-const PORT = 8080;
+const PORT = 80;
 const App2DomainName = process.env.App2DomainName || "jsonplaceholder.typicode.com/todos/1";
 
 app.get("/", (req, res) => {

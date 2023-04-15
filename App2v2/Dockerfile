@@ -6,5 +6,5 @@ COPY package*.json ./
 RUN npm install
 # Bundle app source
 COPY . .
-EXPOSE 8091
+EXPOSE 80
 CMD [ "node", "./src/index.js" ]

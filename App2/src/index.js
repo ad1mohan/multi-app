@@ -3,7 +3,7 @@ const express = require('express');
 
 const app = express();
 
-const PORT = 8090;
+const PORT = 80;
 
 app.get('/', (req, res)=>{
     res.status(200);
